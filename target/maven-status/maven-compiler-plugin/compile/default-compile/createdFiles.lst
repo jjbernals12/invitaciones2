@@ -1,6 +1,8 @@
 com\example\invitaciones\repository\InvitadoRepository.class
+com\example\invitaciones\configuration\CorsConfig$1.class
 com\example\invitaciones\InvitacionesApplication.class
 com\example\invitaciones\controller\InvitadoController.class
+com\example\invitaciones\configuration\CorsConfig.class
 com\example\invitaciones\service\InvitadoServiceImpl.class
 com\example\invitaciones\service\InvitadoService.class
 com\example\invitaciones\entity\Invitado.class
