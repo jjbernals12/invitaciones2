@@ -16,7 +16,7 @@ public class InvitadoController {
     }
 
     @GetMapping
-    public String iniciarServicio(@RequestBody Invitado invitado){ return "iniciado correctamente"; }
+    public String iniciarServicio(){ return "iniciado correctamente"; }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
