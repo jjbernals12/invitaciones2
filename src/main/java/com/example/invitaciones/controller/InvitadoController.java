@@ -15,6 +15,9 @@ public class InvitadoController {
         this.invitadoService = invitadoService;
     }
 
+    @GetMapping
+    public String iniciarServicio(@RequestBody Invitado invitado){ return "iniciado correctamente"; }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void createInvitacion(@RequestBody Invitado invitado){ invitadoService.saveInvitado(invitado); }
