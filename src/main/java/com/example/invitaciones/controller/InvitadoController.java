@@ -15,8 +15,8 @@ public class InvitadoController {
         this.invitadoService = invitadoService;
     }
 
-    @GetMapping
-    public String iniciarServicio(){ return "iniciado correctamente"; }
+    @GetMapping("/{nombre}")
+    public Boolean iniciarServicio(@PathVariable String nombre){ return invitadoService.buscarInvitado(nombre); }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
